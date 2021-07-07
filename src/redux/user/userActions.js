@@ -6,20 +6,20 @@ import {
   FETCH_USERS_FAILURE
 } from "./userTypes";
 
-export const fetchUsersRequest = () => {
+const fetchUsersRequest = () => {
   return {
     type: FETCH_USERS_REQUEST
   };
 };
 
-export const fetchUsersSuccess = users => {
+const fetchUsersSuccess = users => {
   return {
     type: FETCH_USERS_SUCCESS,
     payload: users
   };
 };
 
-export const fetchUsersFailure = error => {
+const fetchUsersFailure = error => {
   return {
     type: FETCH_USERS_FAILURE,
     error: error
